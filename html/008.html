@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<style type="text/css">
+			img{
+				width: 450px;
+				height: 250px;
+			}
+			div{
+				width: 450px;
+				height: 250px;
+				overflow: hidden;
+				border: #333333 1px solid;
+			}
+		</style>
+		<script type="text/javascript">
+			var x = 0;
+			setInterval(function(){
+				x++;
+				var v = x%5;
+				//console.log(v);0
+				var imgs = document.getElementsByTagName("img");
+				for(var i = 0;i<imgs.length;i++){
+					var img = imgs[i];
+					if(i==v){
+						//显示
+						img.style.display="block";
+					}else{
+						img.style.display="none";
+					}
+				}
+			},2000); 
+		</script>
+	</head>
+	<body>
+		<div>
+			<img src="img/01.jpg" >
+			<img src="img/0183345dce7b09a8012053c0fb6312.jpg" >
+			<img src="img/02.jpg" >
+			<img src="img/04.jpg" >
+			<img src="img/04.jpg'" >
+		</div>
+	</body>
+</html>

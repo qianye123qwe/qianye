@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				background-image: url(../logo/006.jpg);
+				/* background-repeat: no-repeat; */
+				background-size: 50%;
+				/* background-size: cover; */
+			}
+			.blue{
+				border: #00FFFF solid 2px;
+				width: 300px;
+				height: 250px;
+				float: right;
+				position: relative;
+				top: 150px;
+				right: 220px;
+				}
+				input{
+					margin-top: 20px;
+					background: rgba(0,0,0,0.2);
+					border: none;
+				}
+				.ok{
+					margin-left: 20px;
+				}
+				#s5{
+					margin-left: 100px;
+				}
+		</style>
+		<script type="text/javascript">
+			function funect(){
+				var reg1 = /^\d{8,11}$/;
+				if(reg1.test(s1.value)){
+					c1.innerText = "√";
+				}else{
+					c1.innerText = "x";
+					return;
+				}
+			} 
+			function funspt(){
+				var reg2 =/^\d{4,20}@qq.com$/;
+				if(reg2.test(s2.value)){
+					c2.innerText = "√";
+				}else{
+					c2.innerText = "x";
+					return;
+				}
+			}
+			function funst(){
+				var reg3 = /^\d{6,20}$/;
+				if(reg3.test(s3.value)){
+					c3.innerText = "√";
+				
+				}else{
+					alert("密码不一致");
+				}
+			}
+			function funstpt(){
+				if(s3.value==s4.value){
+					c4.innerText ="√";
+				}else{
+					alert("密码不一致");
+				}
+			}
+			function fun(){
+				var reg1 =/^\d{3}$/;
+				var reg2 =/^\w{4,20}@qq.com$/;
+				var reg3 =/^\w{6,20}$/;
+				if(reg1.test(s1.value)){
+				}
+				if(reg2.test(s2.value)){
+				}
+				if(reg3.test(s3.value)){
+				}
+				if(s3.value==s4.value){
+					window.open("http://news.4399.com/aoqi/");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="blue">
+			<div class="ok">
+				用&nbsp;&nbsp;户&nbsp;&nbsp;名:
+				<input type="text"  id="s1" onblur="funect()" />
+				<span id="c1">	</span>
+				<br>
+				邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:
+				<input type="text" id="s2" onblur="funspt()" />
+				<span id="c2"></span>
+				<br>
+				密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+				<input type="text" id="s3" onblur="funst()"/>
+				<span id="c3"></span>
+				<br>
+				确认密码:
+				<input type="text" id="s4" onblur="funstpt()"/>
+				<span id="c4"></span>
+				<br>
+				<input type="button" id="s5" value="登录" onclick="fun()"/><!--   onclick---- 点击事件    -->
+			</div>
+		</div>
+	</body>
+</html>

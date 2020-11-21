@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//
+			/* for(var i = 1;i <= 9;i++)
+			{
+				for(var a = 1;a<=i;a++)
+				{
+					document.write(a + "*" + i + "=" + a*i +"&nbsp;&nbsp;&nbsp;&nbsp;");
+				}
+				document.write("<br>");
+			} */
+			
+			
+			/* var str1 = "就会是你吗？？";
+			var str2 = str1.split("").join("><");
+			var arr = str2.split("");
+			arr.unshift("<");
+			arr.push(">");
+			var result = arr.join("");
+			document.write(result); */
+			
+			
+			/* var arr = ["html","css","js"];
+			document.write(arr.length); */
+			
+			
+			
+			// var a= new Date;
+			// var k = a.getFullYear();
+			// var b = a.getMonth();
+			// var c = a. getDate();
+			// document.write("今天是:" + k + "年" + b + "月" + c + "日"  + "<br>");
+			
+			
+			
+			function getSize(width,heigt,depth)
+			{
+				var area = width*heigt;
+				var voloume = width*heigt*depth;
+				var sizes = [area,voloume];
+				return sizes;
+			}
+			var arr = getSize(30,40, 10);
+			document.write("面积:" + arr[0] + "<br>";
+			document.write("体积:" + arr[1]);
+			
+			 
+			
+			/* 
+			window.onload = function()
+			{
+				var oDiv = document.getElementById("div1");
+				oDiv.style.color = "red";
+			}
+			
+			
+			
+			
+			
+			window.onload()
+			{
+				var a = document.getElementsByTagName("list");
+				var b =a.getElementsByTagName("li");
+				a[2].style.color = "red";
+				
+			} */
+			//document.getElementsByTagName()
+			
+			
+			//var arr=["a","b","c","d","e"];
+			//a.reduce()
+			//document.write(arr.join(" 、"))
+			
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="div1">javaScript</div>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>javaSeript</li>
+			<li>jQuery<li>
+			<li>Vue.js</li>
+		</ul>
+	</body>
+</html>

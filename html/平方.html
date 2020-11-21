@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function myfn(){
+				var inp=document.getElementById("myinput");
+				inp.value=isNaN(inp.value)?"哈哈哈":inp.value*inp.value;
+			}
+			var a=1;
+			for(var b=0;b<=100;b++){
+				a+=b;
+			}
+			document.write(a)
+		</script>
+	</head>
+	<body>
+		<input type="text" id="myinput" />
+		<input type="button" value="平方" onclick="myfn()"/>
+	</body>
+</html>

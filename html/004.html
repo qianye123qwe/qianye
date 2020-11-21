@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				margin: 0 auto;
+				width: 300px;
+				border: solid 5px #0000FF;
+				border-radius: 5px;
+			}
+			input{
+				width: 70px;
+				height: 70px;
+				font-size: 20px;
+				border: #CD5C5C solid 6px;
+				border-radius: 6px;
+				margin: 1px 0 1px 1px;
+			}
+			p{
+				font-size: 20px;
+				height: 58px;
+				width: 210px;
+				border-radius: 6px;
+				border: solid 6px #0AA1ED;
+				float: left;
+				margin:  2px 0px 0 1px;
+				line-height: 58px;
+			}
+		</style>
+		<script type="text/javascript">
+				function fun(str)
+			{
+				p1=document.getElementById("p1")
+				if(str=="c"){
+						p1.innerText=" "
+				}else if(str=="="){
+						p1.innerText=eval(p1.innerText);
+				}else{
+					p1.innerText+=str;
+				}
+			}
+		</script>
+	</head>
+	<body>
+			<div id="">
+				<p id="p1"></p>
+				<input type="button" value="c" onclick="fun('c')"/ style="margin-left: 5px;">
+				<input type="button" value="7" onclick="fun('7')"/>
+				<input type="button" value="8" onclick="fun('8')"/>
+				<input type="button" value="9" onclick="fun('9')"/>
+				<input type="button" value="/" onclick="fun('/')"/>
+				<input type="button" value="4" onclick="fun('4')"/>
+				<input type="button" value="5" onclick="fun('5')"/>
+				<input type="button" value="6" onclick="fun('6')"/>
+				<input type="button" value="*" onclick="fun('*')"/>
+				<input type="button" value="1" onclick="fun('1')"/>
+				<input type="button" value="2" onclick="fun('2')"/>
+				<input type="button" value="3" onclick="fun('3')"/>
+				<input type="button" value="-" onclick="fun('-')"/>
+				<input type="button" value="0" onclick="fun('0')"/>
+				<input type="button" value="." onclick="fun('.')"/>
+				<input type="button" value="=" onclick="fun('=')"/>
+				<input type="button" value="+" onclick="fun('+')"/>
+			</div>
+	</body>
+</html>

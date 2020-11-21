@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	<style type="text/css">
+	body {
+		font: 12px "simhei", Arial, Helvetica, sans-serif;
+		color: #666;
+		margin: 0px;
+		background-color: #f5f5f5;
+	}
+
+	header {
+		width: 1000px;
+		margin: 0 auto;
+		padding: 20px 40px;
+		overflow: hidden;
+	}
+
+	header>img {
+		float: left;
+	}
+
+	header>h3 {
+		float: left;
+		margin: 10px 0 0 20px;
+		font-weight: normal;
+		font-size: 24px;
+	}
+
+	#form_div {
+		width: 100%;
+		height: 560px;
+		background-image: url(images/login_bg_05.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	#form_panel {
+		width: 253px;
+		background-color: rgba(0, 0, 0, 0.5);
+		float: right;
+		margin: 122px 122px 0 0;
+		padding: 8px;
+		color: white;
+	}
+
+	#form_panel>p {
+		font-size: 18px;
+		border-bottom: 1px solid white;
+		padding-bottom: 6px;
+	}
+
+	#form_panel a {
+		float: right;
+		font-size: 12px;
+		color: white;
+		text-decoration: none;
+		position: relative;
+		top: 6px;
+	}
+
+	.filed {
+		position: relative;
+	}
+
+	.filed>input {
+		width: 213px;
+		padding: 10px 20px;
+		border: 0;
+	}
+
+	.filed>p {
+		font-size: 12px;
+		color: red;
+		margin: 5px 0;
+	}
+
+	.filed>img {
+		position: absolute;
+		top: 4px;
+		right: 10px;
+		top: 4px;
+	}
+
+	#auto_div>input {
+		position: relative;
+		top: 3px;
+	}
+
+	#form_panel>input {
+		margin-top: 5px;
+		width: 253px;
+		height: 35px;
+		background-color: #0aa1ed;
+		color: white;
+		border: 0;
+		border-radius: 3px;
+	}
+
+	#service_div {
+		width: 1000px;
+		margin: 40px auto;
+		overflow: hidden;
+	}
+
+	#service_div>div {
+		float: left;
+		width: 250px;
+		text-align: center;
+	}
+
+	footer {
+		background-color: white;
+		height: 200px;
+		padding: 30px 0 20px 0;
+	}
+	/* 最大的div */
+	footer>div {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	footer>div>div {
+		overflow: hidden;
+	}
+
+	footer>div>div>div {
+		width: 333px;
+		float: left;
+	}
+	/* 让中间的div中的li浮动到一行 */
+	#center_div>ul>li {
+		float: left;
+		width: 111px;
+		text-align: center;
+	}
+
+	#center_div ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#center_div>ul>li>a {
+		color: #333;
+		text-decoration: none;
+		font-size: 14px;
+	}
+
+	#center_div>ul>li>ul>li>a {
+		color: #808080;
+		text-decoration: none;
+		font-size: 12px;
+		padding-top: 15px;
+		display: inline-block;
+	}
+
+	#right_div>div {
+		width: 125px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	#right_div>img {
+		width: 100px;
+		height: 100px;
+	}
+
+	footer>div>p {
+		text-align: center;
+	}
+	#js>p{
+		float: right;
+		font-size: 20px;
+		margin: 25px 50px 0 0;
+	}
+</style>
+<div id="js">
+	<p>
+	<script type="text/javascript">
+		var d =new Date();
+		var myDay=d.getDate();
+		var myDonth=d.getMonth() +1;
+		var myYear=d.getFullYear();
+		var weekday=["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+		document.write("今天是" + myYear + "年" + myDonth +"月" + myDay + "日" +weekday[d.getDay()]);
+	</script>
+</p>
+</div>
+</head>
+<body>
+	<header>
+		<img src="../logo/logo01.png">
+		<h3>欢迎登录</h3>
+	</header>
+	<article>
+		<div id="form_div">
+			<div id="form_panel">
+				<p>
+					登录信息部管理系统 <a href="#">新生注册</a>
+				</p>
+				<div class="filed">
+					<input type="text" placeholder="请输入用户名">
+					<p>用户名不能为空</p>
+					<img src="../logo/yhm.png">
+				</div>
+				<div class="filed">
+					<input type="text" placeholder="请输入密码">
+					<p>密码不能为空</p>
+					<img src="../logo/mm.png">
+				</div>
+				<div id="auto_div">
+					<input type="checkbox" id="atuo"> 
+					<label for="auto">自动登录</label>
+					<a href="#">忘记密码</a>
+				</div>
+				<input type="submit" value="登录">
+			</div>
+		</div>
+
+		<div id="service_div">
+			<div>
+				<img src="img/05.jpg">
+				<p>品质保障</p>
+			</div>
+			<div>
+				<img src="img/06.jpg">
+				<p>品质保障</p>
+			</div>
+			<div>
+				<img src="img/07.jpg">
+				<p>品质保障</p>
+			</div>
+			<div>
+				<img src="img/08.jpg">
+				<p>品质保障</p>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div>
+			<div>
+				<div id="left_div">
+					<img src="img/03.jpg"> 
+					<img src="img/04.jpg">
+				</div>
+				<div id="center_div">
+					<ul>
+						<li><a href="#">学校概况</a>
+							<ul>
+								<li><a href="#">学校简介</a></li>
+								<li><a href="#">学校领导</a></li>
+								<li><a href="#">组织机构</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">学校概况</a>
+							<ul>
+								<li><a href="#">学校简介</a></li>
+								<li><a href="#">学校领导</a></li>
+								<li><a href="#">组织机构</a></li>
+							</ul></li>
+
+						<li><a href="#">学校概况</a>
+							<ul>
+								<li><a href="#">学校简介</a></li>
+								<li><a href="#">学校领导</a></li>
+								<li><a href="#"> <img src="img/02.jpg"></a>
+									<a href="#"> <img src="img/02.jpg"></a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<div id="right_div">
+					<div>
+						<p>信息部客户端</p>
+						<img src="img/0183345dce7b09a8012053c0fb6312.jpg"> <img
+							src="img/01.jpg">
+					</div>
+					<img src="img/01(1).jpg">
+				</div>
+			</div>
+			<p>©2019 临沂市大地艺术学校信息部 版权所有 鲁ICP证xxxxxxxxxxx</p>
+		</div>
+
+	</footer>
+</body>
+</html>

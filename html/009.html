@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 200px;
+				height: 150px;
+			}
+			div{
+				width: 200px;
+				height: 150px;
+				overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript">
+			var x = 0;
+			setInterval(function(){
+				x++;
+				var visblelnex = x%3;
+				//显示
+				//consle.log(visblelndex);
+				var imgs =document.getElementsByTagName("img");
+				//var visblelndex = x%imgs.length;
+				for(var i=0;i<imgs.length;i++){
+					var img = imgs[i];
+					if(i==visblelnex){
+						img.style.display="block";
+					}else{
+						img.style.display="none";
+					}
+				}
+					},1000);
+		</script>
+	</head>
+	<body>
+	<div>
+		<img src="../logo/001.jpg" >
+		<img src="../logo/002.jpg" >
+		<img src="../logo/003.jpg" >
+	</div>
+		
+	</body>
+</html>

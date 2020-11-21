@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		
+		</style>
+		<script type="text/javascript">
+			setInterval(addfn,1200);
+			function addfn(){
+				var s= parseInt(Math.random()*1200);
+				var y= parseInt(Math.random()*1200);
+				var img=document.createElement("img");
+				img.src="../logo/005.jpg";
+				document.body.appendChild(img);
+				img.style.position="absolute";
+				img.style.top=s+"px";
+				img.style.left=y+"px";
+				img.style.watch="200px";
+				img.style.height="150px";
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
